@@ -8,9 +8,11 @@ import { AdminComponent } from './admin/admin.component';
 import { AccessDeniedComponent } from './access-denied/access-denied.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EditAboutComponent } from './edit-about/edit-about.component';
-import { authGuard } from './services/auth.guard';
+import { AuthGuard } from './services/auth.guard';
+// import { authGuard } from './services/auth.guard';
 import { roleGuard } from './services/role.guard';
-import { notCompleteGuard } from './services/not-complete.guard';
+// import { notCompleteGuard } from './services/not-complete.guard';
+import { NotCompleteGuard } from './services/not-complete.guard';
 import { modulesGuard } from './services/modules.guard';
 
 export const routes: Routes = [
@@ -25,8 +27,8 @@ export const routes: Routes = [
     ],
   },
   { path: 'products', component: ProductsComponent },
-  { path: 'contact', component: ContactComponent, canDeactivate: [notCompleteGuard] },
-  { path: 'admin', component: AdminComponent, canActivate: [authGuard] },
+  { path: 'contact', component: ContactComponent, canDeactivate: [NotCompleteGuard] },
+  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
   {
     path: 'offers',
     canMatch: [modulesGuard],
