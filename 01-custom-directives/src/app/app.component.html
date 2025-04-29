@@ -1,0 +1,30 @@
+<!-- Requirement : -->
+<!-- Show the number in 'green' if its divisible by 5 -->
+<!-- Else show it in 'red' -->
+
+<!-- <div
+  [ngClass]="{
+    red: number % 5 != 0,
+    green: number % 5 === 0
+  }"
+
+  (click)="onClick()"
+>
+  {{ number }}
+</div> -->
+
+<!-- Have the above functionality only on click -->
+
+<!-- <div
+  [ngClass]="{
+    red: isClicked && number % 5 != 0,
+    green: isClicked && number % 5 === 0
+  }"
+
+  (click)="onClick()"
+>
+  {{ number }}
+</div> -->
+
+<!-- Using custom directives to achieve the same -->
+<div appHighlight [number]="number" [divisibleBy]="4">{{ number }}</div>
