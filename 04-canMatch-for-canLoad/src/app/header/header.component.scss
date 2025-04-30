@@ -1,0 +1,20 @@
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: pink;
+  color: purple;
+  font-weight: bolder;
+}
+
+.right {
+  background-color: purple;
+  color: white;
+  padding: 1em;
+  height: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
