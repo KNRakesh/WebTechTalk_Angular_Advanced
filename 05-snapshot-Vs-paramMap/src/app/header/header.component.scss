@@ -1,0 +1,15 @@
+.header {
+    background-color: darkblue;
+}
+
+.nav-item {
+    color: aqua;
+    font-weight: bolder;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2em;
+}
+
+.active {
+    color: orange;
+}
