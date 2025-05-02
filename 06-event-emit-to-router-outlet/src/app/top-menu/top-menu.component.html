@@ -1,0 +1,14 @@
+<div class="outer d-flex align-items-center justify-content-between">
+  <div
+    class="running-status d-flex align-items-center justify-content-center m-3" [ngStyle]="{
+        backgroundColor: runStatus === 'Stopped' ? 'red' : 'green'
+    }"
+  >
+    {{ runStatus }}
+  </div>
+  <div class="login-status d-flex align-items-center justify-content-center m-3" [ngStyle]="{
+    backgroundColor: status === 'Offline' ? 'red' : 'green'
+  }">
+    {{ status }}
+  </div>
+</div>
