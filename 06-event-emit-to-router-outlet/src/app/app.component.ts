@@ -7,25 +7,25 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, TopMenuComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-
   status = 'Offline';
 
   runStatus = 'Stopped';
 
   changeStatus() {
-    this.status = this.status === 'Offline' ? 'Online' : 'Offline'
+    this.status = this.status === 'Offline' ? 'Online' : 'Offline';
   }
 
   changeRunStatus() {
-    this.runStatus = this.runStatus === 'Stopped' ? 'Running' : 'Stopped'
+    this.runStatus = this.runStatus === 'Stopped' ? 'Running' : 'Stopped';
   }
 
   subscribeToChildEmitter(componentRef: any) {
+    console.log('componentRef', componentRef)
     componentRef.runStatusEmitter.subscribe((res: any) => {
-      this.changeRunStatus()
-    })
+      this.changeRunStatus();
+    });
   }
 }
