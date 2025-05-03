@@ -1,0 +1,11 @@
+<div class="neighbour">
+    <div class="title">Neighbour Component</div>
+    <div class="counter">
+        <div class="count" (click)="goToDetail()"> {{ count }} </div>
+        <div>
+            <button (click)="increase()">Increase</button>
+            <button (click)="refresh()">Refresh</button>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

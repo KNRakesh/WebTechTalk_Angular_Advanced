@@ -1,0 +1,18 @@
+.outer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #4f4185;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.parent-tab {
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.neighbour-tab {
+  @extend .parent-tab;
+}

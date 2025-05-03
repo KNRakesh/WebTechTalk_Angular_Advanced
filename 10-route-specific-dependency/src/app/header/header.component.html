@@ -1,0 +1,8 @@
+<div class="outer">
+    <div class="parent-tab" (click)="goToParent()" [ngStyle]="{
+        color: this.selectedTab === 'parent' ? 'lightgreen' : 'white'
+    }">PARENT</div>
+    <div class="neighbour-tab" (click)="goToNeighbour()" [ngStyle]="{
+        color: this.selectedTab === 'neighbour' ? 'lightgreen' : 'white'
+    }">NEIGHBOUR</div>
+</div>
