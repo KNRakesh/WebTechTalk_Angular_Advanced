@@ -1,0 +1,7 @@
+<div class="outer d-flex justify-content-end">
+    <div class="inner my-auto mx-3">
+        <!-- <button class="btn d-flex" *ngIf="!isLoggedIn">Login</button>
+        <button class="btn d-flex" *ngIf="isLoggedIn">Logout</button> -->
+        <button class="btn d-flex" (click)="toggleLoginStatus()">{{!isLoggedIn ? 'Login' : 'Logout'}}</button>
+    </div>
+</div>
