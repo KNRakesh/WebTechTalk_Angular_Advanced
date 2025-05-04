@@ -1,0 +1,10 @@
+<div class="container text-center m-5">
+  <div class="btn-container">
+    <button class="btn btn-danger" (click)="refresh()">Refresh</button>    
+  </div>
+  <div class="items-container">
+    <div class="item m-2" *ngFor="let user of users; trackBy: trackByUser">
+      {{user.name}}
+    </div>
+  </div>
+</div>
