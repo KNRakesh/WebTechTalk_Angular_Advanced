@@ -1,0 +1,31 @@
+* {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ul {
+    background-color: black;   
+    padding: 30px; 
+}
+
+li {
+    background-color: lightpink;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.first {
+    background-color: red;
+}
+
+.last {
+    background-color: yellow;
+}
+
+span:nth-last-of-type(odd) {
+    color: red
+}
