@@ -1,0 +1,14 @@
+.items {
+  margin: 0 auto;
+}
+
+.item {
+  font-size: larger;
+  font-weight: 600;
+  color: black;
+}
+
+.title {
+  @extend .item;
+  color: red;
+}

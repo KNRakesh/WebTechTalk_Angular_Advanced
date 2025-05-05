@@ -1,0 +1,35 @@
+.red-circle {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.red-square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    // border-radius: 50%;
+}
+
+.green-square {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    // border-radius: 50%;
+}
+
+.green-circle {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.container {
+    margin: 10em auto;
+}
+
+button {
+    margin: 0 3em;
+}
