@@ -1,0 +1,42 @@
+.form-container {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  background-color: #dddddd;
+  margin: 2em auto;
+  border-radius: 5px;
+}
+
+form {
+  padding: 2em;
+}
+
+input,
+button {
+  margin: 1em 0;
+}
+
+.comments-container {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  background-color: #dddddd;
+  margin: 2em auto;
+  border-radius: 5px;
+  padding: 2em;
+}
+
+.comments-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comment {
+  background-color: rgb(218, 80, 80);
+  color: white;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid black;
+  display: flex;
+  margin: 0.5em auto;
+}
